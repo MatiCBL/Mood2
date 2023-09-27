@@ -56,7 +56,7 @@ export const analyze = async (content) => {
   }
 };
 
-const qa = async (question, entries) => {
+export const qa = async (question, entries) => {
   const docs = entries.map((entry) => {
     return new Document({
       pageContent: entry.content,
